@@ -10,8 +10,39 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.bit2016.gugudan.MainActivity">
 
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:text="구구단 파이터!" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_centerVertical="true"
+        android:text="게임시작" />
+
+    <Button
+        android:id="@+id/button_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_start"
+        android:layout_below="@+id/button_start"
+        android:layout_marginTop="17dp"
+        android:text="기록" />
+
+    <Button
+        android:id="@+id/button_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_record"
+        android:layout_below="@+id/button_record"
+        android:layout_marginTop="22dp"
+        android:text="도움말" />
 </RelativeLayout>
